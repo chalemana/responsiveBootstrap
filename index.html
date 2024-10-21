@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap en JaP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jóvenes a Programar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex col-12 col-lg-2 order-lg-2" role="search">
+                    <input class="form-control me-2" type="search" name="searchBar" placeholder="Buscar" aria-label="Search">
+                </form>  
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4 order-lg-1 justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#JaP">Sobre el Programa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </a>
+                        <!-- Sub-menu--> 
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#opcion1">Lo Bueno del Programa</a></li>
+                            <li><a class="dropdown-item" href="#opcion2">Lo Malo del Programa</a></li>
+                            <li><a class="dropdown-item" href="#opcion3">Comentarios de Alumnas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="my-5 d-none d-lg-block text-center">
+        <h3> JaP </h3>
+        <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p><strong>Los que</strong></p>
+                </div>
+                <div class="carousel-item">
+                    <p><strong>Odiamos</strong></p>
+                </div>
+                <div class="carousel-item">
+                    <p><strong>Bootstrap</strong></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="d-flex flex-wrap justify-content-center">
+        <ul class="list-group collapse d-lg-block col-10 col-lg-2" id="navbarToggleExternalContent">
+            <li class="list-group-item p-3"><a href="#opcion1" class="text-dark">Lo Bueno del Programa</a></li>
+            <li class="list-group-item p-3"><a href="#opcion2" class="text-dark">Lo Malo del Programa</a></li>
+            <li class="list-group-item p-3"><a href="#opcion3" class="text-dark">Comentarios de Alumnas</a></li>
+        </ul>
+
+        <div class="d-flex flex-wrap row-cols-1 row-cols-md-2 row-cols-lg-3 mx-3 col-10 col-lg-7" style="text-align: justify;">
+            <!-- Contenido de las secciones -->
+            <div class="bg-light px-2 mb-3">
+                <div id="JaP">
+                    <p class="mb-0">El programa <strong>"Jóvenes a Programar"</strong> de Ceibal es una iniciativa educativa que ofrece formación en tecnologías digitales a jóvenes. Está orientado a preparar a los estudiantes para el mercado laboral en el campo de la tecnología.</p>
+                </div>
+            </div>
+
+            <div class="bg-light px-2 mb-3">
+                <div id="opcion1" class="mt-4">
+                    <p class="mb-0"><strong>Formación Integral:</strong> Uno de los mayores beneficios del programa es la formación amplia en tecnologías. Los estudiantes adquieren habilidades tanto teóricas como prácticas en diversos lenguajes de programación.</p>
+                </div>
+            </div>
+
+            <div class="bg-light px-2 mb-3">
+                <div id="opcion2" class="mt-4">
+                    <p class="mb-0"><strong>Ritmo Individual:</strong> Algunas áreas requieren un nivel avanzado de conocimientos. La plataforma permite avanzar a diferentes ritmos, lo que puede ser difícil para algunos. Sin embargo, esto también fomenta la autodisciplina y la capacidad de aprender de forma autónoma.</p>
+                </div>
+            </div>
+
+            <div class="bg-light px-2 mb-3">
+                <div id="opcion3" class="mt-4">
+                    <p class="mb-0"><em>"Participar en 'Jóvenes a Programar' ha sido una experiencia reveladora."</em> - Yanina <em>"Nos enseña a resolver problemas de la vida real."</em> - Camila. <em>"Este curso me ha motivado a seguir aprendiendo y explorar más en el mundo de la programación."</em> - Martina</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
